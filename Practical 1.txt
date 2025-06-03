@@ -1,0 +1,60 @@
+Practical 1
+
+https://www.npackd.org/p/com.google.AppEnginePythonSDK/1.9.62
+Use Python 2.7.9 for this
+Then Continue the installation
+Open google app engine, In Edit select preferences
+
+Then in Python path, give the path of python 2.7 (C:\python27\pythonw.exe)
+Then in App engine SDK (C:\Program files (x86)\Google\google_appengine)
+
+Create an empty folder in desktop and name it app
+Open GAE and go in File and create a new application
+Then finallly click the project and run
+Open browser and run localhost:8080
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Google cloud cli download
+
+After that open google cli and
+gcloud init
+and select 2 for create a new configuration
+Name: webb-12
+Then you have to login
+
+After that go into console and create a new project over there
+After that you have to enable billing for that project, select manage billing account in the side bar, create one and select my projects, then link with billing account and enable it
+Select app engine and in search bar type "create an application in app engine standard"
+
+After selecting that, go in open app creation, or else activate cloud shell
+git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+cd python-docs-samples/appengine/standard_python3/hello_world
+gcloud app deploy
+gcloud app browse
+Then hit the endpoint
+
+NOW TO RUN IT IN LOCAL SYSTEM
+download the files from GitHub and place it in a folder webb in desktop
+
+NOW IN CLI
+pick cloud project
+cd (navigate to webb folder)
+gcloud app deploy
+gcloud app browse
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Practical 3: We are going to use SCP and virtualbox
+vdk image so that we dont have to configure it https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt or https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-18.04
+
+We will create a NAT network inside a PC so that the VM can talk to each other
+
+Open virtualbox create a VM and then
+In File select preferences then select network there add a new NAT Network, give CIDR 172.168.2.0/24
+
+Select the VM then go in Network Attached to NAT Network
+Similarly for 2nd VM as well
+
+Start the VM: id and password is vagrant
