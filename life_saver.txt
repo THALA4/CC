@@ -57,6 +57,9 @@ object: book,student
 field&relationship: new -> text ->  book:author,publisher ; student : class
 
 search: tabs:tabstyle; app manager: new lightning app: student, books, contacts , dashboards ,entilements..
+at last system administrator
+
+Go in setup from setting and go into app manager (quick find)
 
 ************************************************
 
