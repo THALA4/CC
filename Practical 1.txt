@@ -34,6 +34,12 @@ gcloud app deploy
 gcloud app browse
 Then hit the endpoint
 
+FOR THIS ERROR
+gcloud projects add-iam-policy-binding PROJECT_ID \
+  --member="serviceAccount:PROJECT_ID@appspot.gserviceaccount.com" \
+  --role="roles/storage.admin"
+
+
 NOW TO RUN IT IN LOCAL SYSTEM
 download the files from GitHub and place it in a folder webb in desktop
 
